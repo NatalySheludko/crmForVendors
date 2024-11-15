@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import Header from '@/app/components/header';
+//import Header from '@/app/components/header';
 import { notFound } from 'next/navigation';
 
 export interface PageProps {
@@ -18,7 +18,10 @@ export default function Page({ params }: PageProps) {
 
   return (
     <>
-      <Header>Company ({params.id})</Header>
+      <div className="py-6 px-10">
+        <p>{`Information about company (${params.id})`}</p>
+      </div>
+      {/* <Header>Company ({params.id})</Header> */}
       <p>{new Date().toTimeString()}</p>
     </>
   );
