@@ -6,8 +6,10 @@ import CompanyForm from '@/app/components/company-form';
 import Modal from '@/app/components/modal';
 
 //export interface PageProps {}
+
 export default function Page() {
-  const router = useRouter();
+	const router = useRouter();
+	
   return (
     <Modal show={true} onClose={() => router.back()}>
       <CompanyForm onSubmit={console.log} />
