@@ -5,6 +5,8 @@ import { getCompanies, getCountries } from '@/lib/api';
 import DashboardCard from '@/app/components/dashboard-card';
 import getCountById from '@/lib/utils/getCountById';
 
+//export interface PageProps {}
+
 export default async function Page() {
   const countries = await getCountries();
   const companies = await getCompanies();

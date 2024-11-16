@@ -4,11 +4,11 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import Button from '@/app/components/button';
 
-export default function AddCompanyButton() {
+export default function ToCompanyButton() {
   const router = useRouter();
   return (
-    <Button onClick={() => router.push('/companies/new', { scroll: false })}>
-      Add company
+    <Button onClick={() => router.push('/companies/', { scroll: false })}>
+      To company
     </Button>
   );
 }
